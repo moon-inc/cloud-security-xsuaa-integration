@@ -26,7 +26,8 @@
 			<version>${javax.servlet.api.version}</version>
 			<scope>provided</scope>
 		</dependency>
-	</dependencies>
+		
+		</dependencies>
 
 	<build>
 		<plugins>
@@ -38,6 +39,19 @@
 					<warName>sap-java-buildpack-api-usage</warName>
 				</configuration>
 			</plugin>
+			 <plugin>
+			 <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
+            <configuration>
+                <fork>true</fork>
+                <executable>C:\Program Files (x86)\Java\jdk1.8.0_221\bin\javac.exe</executable>
+                  <compilerVersion>1.8</compilerVersion>
+        <source>1.8</source>
+        <target>1.8</target>
+            </configuration>
+        </plugin>
+     
 		</plugins>
-	</build>
+	</build> 
 </project>

@@ -8,7 +8,8 @@ applications:
   instances: 1
   memory: 896M
   routes:
-    - route: sap-java-buildpack-api-usage-((ID)).((LANDSCAPE_APPS_DOMAIN))
+    - route: sap-java-buildpack-api-usage-a4f05443trial.cfapps.eu10.hana.ondemand.com
+
 
   host: 
   path: target/sap-java-buildpack-api-usage.war
@@ -23,14 +24,14 @@ applications:
     - nodejs_buildpack
   memory: 128M
   routes:
-    - route: approuter-sap-java-buildpack-api-usage-((ID)).((LANDSCAPE_APPS_DOMAIN))
+    - route: approuter-sap-java-buildpack-api-usage-a4f05443trial.cfapps.eu10.hana.ondemand.com
   services:
     - xsuaa-buildpack
   env:
     destinations: >
       [
         {"name":"sap-java-buildpack-api-usage-destination",
-         "url":"https://sap-java-buildpack-api-usage-((ID)).((LANDSCAPE_APPS_DOMAIN))",
+         "url":"https://sap-java-buildpack-api-usage-a4f05443trial.cfapps.eu10.hana.ondemand.com",
          "forwardAuthToken": true}
       ]
 ...

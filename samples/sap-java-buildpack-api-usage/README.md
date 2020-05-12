@@ -1,4 +1,4 @@
-# Description
+cf create-service xsuaa application xsuaa-buildpack -c xs-security.json# Description
 This sample uses the SAP application router as a web server and forwards requests to a Java back-end application running on the SAP Java buildpack.
 In a typcal UI5 application, the application router server HTML files and REST data would be provided by a back-end application. To focus on the security part, UI5 has been omitted.
 
